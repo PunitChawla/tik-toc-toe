@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&family=Roboto&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    background-color: #09c2e7;
+    color: white;
+    height: 65px;
+    font-size: 27px;
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+    font-family: 'Roboto', sans-serif;
+    justify-content: center;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+.gamecontanier{ 
+    background-color:rgb(187 188 231);
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.contanier{
+    display: grid;
+    grid-template-rows: repeat(3,10vw);
+    grid-template-columns: repeat(3,10vw);
+    font-family: 'Bebas Neue', cursive;
+    position: relative;
+}
+.box{
+    border: 2px solid black;
+    font-size: 8vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box:hover{
+    background-color: rgb(180, 249, 249);
+}
+.info{
+  font-size: 23px;
+}
+.gameinfo{
+    padding: 34px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.imgbox img {
+    width: 0;
+    transition: width 1s ease-in-out;
+}
+.br-0{
+    border-right:  0;
+}
+.bl-0{
+    border-left:  0;
+}
+.bt-0{
+    border-top:  0;
+}
+.bb-0{
+    border-bottom:  0;
+}
+#reset{   
+     cursor: pointer;
+    padding: 1px 18px;
+    margin: 8px 70px;
+    background-color: aquamarine;
+    border-radius: 6px;
+
+}
+.line{
+    background-color: red;
+    width: 20vw;
+    height: 3px;
+    position: absolute;
+    left: 0;
+
+}
+@media screen and (max-width:1000px) {
+    
+    .gamecontanier{
+        flex-wrap: wrap;
+
+    }
+    .gameinfo{
+        margin-top: 34px;
+
+    }
+    .gameinfo h1{
+        font-size: 1.5rem;
+    }
+    .contanier{
+        display: grid;
+        grid-template-columns: repeat(3,20vw);
+        grid-template-rows: repeat(3,20vw);
+    }
+}
